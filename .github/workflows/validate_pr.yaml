@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: "Validate pull request"
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, standard]
     steps:
       - uses: actions/checkout@v2
         with:
